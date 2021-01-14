@@ -3,6 +3,7 @@ import pygame as pgm
 from error import get_error
 
 pgm.init()
+
 w, h = 640, 480
 root = pgm.display.set_mode((w, h))
 need_to_flip = False
