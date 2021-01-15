@@ -9,8 +9,8 @@ def get_error():
 
     running = True
 
-    font = pgm.font.SysFont(None, 200)
-    img = font.render('ERROR', True, 'RED')
+    font = pgm.font.SysFont(None, 120)
+    img = font.render('You are dead', True, 'RED')
     root.blit(img, (20, 20))
     pgm.display.flip()
 
@@ -18,3 +18,4 @@ def get_error():
         for e in pgm.event.get():
             if e.type == pgm.QUIT:
                 running = False
+
